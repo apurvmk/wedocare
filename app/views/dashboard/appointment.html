@@ -1,0 +1,34 @@
+<div>
+	<h2>Appointment <br /><small>Please submit the form below to request an appointment</small></h2>
+	<div class="jumbotron">
+		<div class="container">
+			<form role="form" ng-submit="appointment()"  ng-app-"formApp" ng-controller="FormCtrl">
+
+				<div class="form-content">
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" id="patientId" placeholder="Patient ID" ng-model="formData.patientId">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" id="doctorId" placeholder="Doctor ID" ng-model="formData.doctorId">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" id="appointmentSubject" placeholder="Subject" ng-model="formData.appointmentSubject">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" id="appointmentDescription" placeholder="Description" ng-model="formData.appointmentDescription">
+					</div>
+
+					<div class="form-group">
+						<input type="datetime-local" class="form-control input-underline input-lg" id="appointmentDateTime" placeholder="Date" ng-model="formData.appointmentDateTime">
+					</div>
+				</div>
+
+				<button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded">Submit</button>
+
+			</form>
+		</div>
+	</div>
+</div>
